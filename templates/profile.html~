@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+				<div>
+				    {% for message in message_list %}
+				      <div>{% include "includes/message.html" %}</div>
+				    {% endfor %}
+				</div>
+				  {% include "includes/pagination.html" %}
+{% endblock %}

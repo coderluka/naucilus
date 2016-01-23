@@ -1,0 +1,154 @@
+html, body {
+	padding: 0px;
+	margin: 0px;
+	background: url("/static/img/demo-bg_final.png");
+	background-size: cover;
+	background-align: center;
+}
+
+.aleft {
+	text-align: left;
+	margin-left: 10px;
+}
+
+.aright {
+	text-align: right;
+	float: right;
+	margin-left: 5px;
+	margin-right: 10px;
+}
+
+.navbar-brand {
+	display: inline-block;
+	color: white;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-decoration: none;
+	height: 1px;
+	margin-top: 10px;
+}
+
+.navbar-brand:hover, .navbar-brand:focus {
+	color: rgb(220,220,220);
+}
+
+#h_demo a {
+	margin: 0px;
+	margin-top: 5%;	
+	text-decoration: none;
+	color: white;
+	font-family: sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	text-align: center;
+	font-size: 1.2em;
+	transition-duration: .2s;
+}
+
+#h_demo a:hover, #h_demo a:focus {
+	letter-spacing: 5px;
+	color: rgb(220,220,220);
+}
+
+.metanav a {
+	text-decoration: none;
+	color: white;
+	font-family: sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	text-align: center;
+	font-size: 1.2em;
+	transition-duration: .2s;e;
+}
+
+.metanav a:hover, .metanav a:focus {
+	letter-spacing: 5px;
+	color: rgb(220,220,220);
+}
+
+#copyleft {
+	display: block;
+	margin: 0px;
+	padding: 0px;	
+	color: rgba(255,255,255, .4);
+	font-family: sans-serif;
+	font-size: 1em;
+	margin-top: 50px;
+}
+
+#username {
+	display: block;
+	background: rgba(0,170,220,.95);
+	border-radius: 5px;
+	height: 30px;
+	font-size: 1.5em;
+	font-family: sans-serif;
+	color: white;
+	border-style: none;
+	text-align: center;
+	margin-top: 20px;
+	transition-duration: .2s;
+}
+
+#password {
+	display: block;
+	background: rgba(0,170,220,.95);
+	border-radius: 5px;
+	height: 30px;
+	font-size: 1.5em;
+	font-family: sans-serif;
+	color: white;
+	border-style: none;
+	text-align: center;
+	margin-top: 20px;
+	transition-duration: .2s;
+}
+
+#username:hover, #username:focus {
+	background: rgba(0,210,255, 1);
+	filter: drop-shadow( 2px 2px 2px rgba(0,0,0,.7));
+	border-radius: 0px;
+}
+
+#password:hover, #password:focus {
+	background: rgba(0,210,255, 1);
+	filter: drop-shadow( 2px 2px 2px rgba(0,0,0,.7));
+	border-radius: 0px;
+}
+
+.btn {
+	display: block;
+	color: rgb(8,8,8);
+	background: rgb(255,255,255);
+	height: 30px;
+	width: 100px;
+	margin-top: 30px;
+	border-style: none;
+	filter: drop-shadow( 2px 2px 2px rgba(0,0,0, .4));
+	transition-duration: .2s;
+}
+
+.btn:hover, .btn:focus {
+	color: rgb(0,170,220);
+	border-radius: 5px;
+}
+
+center h2 {
+	display: block;
+	color: white;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	margin-top: 7%;
+}
+
+.help-inline {
+	display: block;
+	color: white;
+	margin-top: 10px;
+	font-family: sans-serif;
+}
+
+

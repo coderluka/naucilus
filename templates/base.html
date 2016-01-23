@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Naucilus</title>
+
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/base.js"></script>
+    <link href="/static/css/base.css" rel="stylesheet"/>
+
+
+<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+	    <div align="left" class="navbar-header page-scroll">
+		<a class="navbar-brand aleft" href="/">Home</a>
+                <a class="navbar-brand aright" href="/profile">Profile</a>
+                <a class="navbar-brand aright" href="/about">About</a>
+                <a class="navbar-brand aright" href="/contact ">Contact</a>
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+	<center>	
+		<div class=page>
+	  		<h2 id="h_demo"><a href="/demo">Demo</a></h2>
+	  		<div class=metanav>
+	  		{% if not session.logged_in %}
+	 		   <a href="{{ url_for('register') }}">register</a>
+			  {% else %}
+			   <a href="{{ url_for('public_timeline') }}">forum</a>
+			   <a href="{{ url_for('create') }}">post</a>
+	 		   <a href="{{ url_for('auth.logout') }}">leave</a>
+			  {% endif %}
+		</div>
+	  {% for message in get_flashed_messages() %}
+	    <div class=flash>{{ message }}</div>
+	  {% endfor %}
+	  <h2>{% block content_title %}{% endblock %}</h2>
+  {% block content %}
+{% endblock %}
+</head>
+<!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a href="https://github.com/Jovan3211/Naucilus" target="blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                    <p id="copyleft" class="copyright text-muted">Copyright &copy; NaucilusTeam 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</center>
+</html>

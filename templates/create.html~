@@ -1,0 +1,42 @@
+{% extends "baseCreate.html" %}
+
+{% block content_title %}Post{% endblock %}
+
+{% block content %}
+  <form action="{{ url_for('create') }}" method=post>
+    <dl>
+      <dt><i>Message:</i></dt>
+      <dd><textarea name="content"></textarea></dd>
+      <dd><input type="submit" value="Post" /></dd>
+    </dl>
+  </form>
+
+<!-- Footer -->
+    <center><footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a href="https://github.com/Jovan3211/Naucilus" target="blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                    <p class="copyright text-muted">Copyright &copy; NaucilusTeam 2016</p>
+                </div>
+            </div>
+        </div>
+    </center></footer>
+{% endblock %}

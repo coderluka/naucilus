@@ -1,0 +1,42 @@
+<html>
+	<body>
+	{% extends "baseCourse.html" %}
+	{% block content %}
+	<header class="intro-header" style="background-image: url('static/img/demo-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>{{ course_name }}</h1>
+                        <hr class="small">
+                        <span class="subheading">{{ course_description }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    	</header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-preview">
+                    <h2 class="post-title">
+                        {{ CourseSegment_name }}
+                    </h2>
+                    <h3 class="post-subtitle">
+                        {{ video_description }}
+                    </h3>
+                    <p class="post-meta">Number of videos: 1  |  Course length: 5 minutes {{ course_info }}</p>
+
+		
+                </div>
+            </div>
+        </div>
+  </div>
+
+    <hr>	
+    
+	{% endblock %}
+	</body>
+</html>

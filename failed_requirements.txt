@@ -1,0 +1,10 @@
+piksemel
+comar
+pisi
+pwquaility
+pycurl
+pygobject
+pyparted
+urlgrabber
+pycups
+pylibzlma

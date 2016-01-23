@@ -1,0 +1,7 @@
+{extends question_list.txt}
+{block content}
+from random import shuffle
+	#example: x = [[i] for i in range(10)]
+	questions = ['ps_course1', 'html_course4', 'final_test.txt']
+	random.shuffle(questions)
+{endblock}
